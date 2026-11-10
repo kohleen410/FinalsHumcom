@@ -8,9 +8,8 @@
         :root {
             --bg-canvas: #ffffff;
             --wireframe-dark: #000000;
-            --wireframe-light: #e3e8f7;
-            --wireframe-gray: #717171;
-            --wireframe-border: #000000;
+            --wireframe-light: #ffffff;
+            --wireframe-gray: #555555;
         }
 
 
@@ -18,7 +17,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
         }
 
 
@@ -36,31 +35,32 @@
 
         .prototype-header {
             text-align: center;
-            margin-bottom: 13px;
+            margin-bottom: 15px;
         }
 
 
         .prototype-header h1 {
-            font-size: 14px;
+            font-size: 15px;
             color: var(--wireframe-dark);
         }
 
 
         .prototype-header p {
-            font-size: 9px;
+            font-size: 10px;
             color: var(--wireframe-gray);
             margin-top: 2px;
         }
 
 
+        /* Side-by-Side Three Frame Wrapper */
         .side-by-side-wrapper {
             display: flex;
-            gap: 25px;
+            gap: 20px;
             justify-content: center;
             align-items: flex-start;
             flex-wrap: wrap;
             width: 100%;
-            max-width: 840px;
+            max-width: 1200px;
         }
 
 
@@ -72,18 +72,18 @@
 
 
         .frame-label {
-            font-size: 9.5px;
+            font-size: 10px;
             font-weight: bold;
             color: var(--wireframe-dark);
             margin-bottom: 6px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
 
         .app-container {
-            width: 370px;
-            height: 700px;
+            width: 350px;
+            height: 680px;
             background-color: var(--wireframe-light);
             display: flex;
             flex-direction: column;
@@ -107,7 +107,7 @@
             background-color: var(--wireframe-light);
             justify-content: center;
             align-items: center;
-            padding: 18px;
+            padding: 16px;
             text-align: center;
             color: var(--wireframe-dark);
             overflow-y: auto;
@@ -116,7 +116,7 @@
 
         .login-wrapper-direct {
             width: 100%;
-            max-width: 320px;
+            max-width: 300px;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -125,7 +125,7 @@
 
         .mode-buttons {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             width: 100%;
         }
 
@@ -135,7 +135,7 @@
             background-color: var(--wireframe-light);
             border: 2px solid var(--wireframe-dark);
             color: var(--wireframe-dark);
-            padding: 10px;
+            padding: 9px;
             font-size: 11px;
             font-weight: bold;
             cursor: pointer;
@@ -155,11 +155,12 @@
             font-size: 13px;
             letter-spacing: 0.5px;
             margin-top: 4px;
+            font-weight: bold;
         }
 
 
         .auth-sub {
-            font-size: 9px;
+            font-size: 10px;
             color: var(--wireframe-gray);
             margin-bottom: 6px;
         }
@@ -171,7 +172,7 @@
 
 
         .input-group label {
-            font-size: 9px;
+            font-size: 10px;
             color: var(--wireframe-dark);
             display: block;
             margin-bottom: 2px;
@@ -186,7 +187,7 @@
             border: 2px solid var(--wireframe-dark);
             background-color: var(--wireframe-light);
             color: var(--wireframe-dark);
-            font-size: 10px;
+            font-size: 11px;
         }
 
 
@@ -207,7 +208,7 @@
             border: 2px solid var(--wireframe-dark);
             border-left: none;
             color: var(--wireframe-dark);
-            padding: 8px 12px;
+            padding: 8px 10px;
             cursor: pointer;
             font-size: 12px;
         }
@@ -217,7 +218,7 @@
             color: var(--wireframe-dark);
             border: 1px dashed var(--wireframe-dark);
             padding: 4px;
-            font-size: 9px;
+            font-size: 9.5px;
             margin-top: 2px;
             display: none;
         }
@@ -248,7 +249,7 @@
 
 
         .app-header h1 {
-            font-size: 10.5px;
+            font-size: 11px;
             letter-spacing: 0.5px;
             margin-bottom: 3px;
         }
@@ -258,8 +259,7 @@
             background-color: var(--wireframe-light);
             color: var(--wireframe-dark);
             padding: 3px 8px;
-            border-radius: 0;
-            font-size: 8.5px;
+            font-size: 9.5px;
             font-weight: bold;
             display: inline-flex;
             align-items: center;
@@ -298,22 +298,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 7.5px;
+            font-size: 8.5px;
             cursor: pointer;
             padding: 3px 6px;
         }
 
 
-        .filter-btn .icon {
-            font-size: 11px;
-            margin-bottom: 1px;
-        }
-
-
         .filter-btn.active {
-            color: var(--wireframe-dark);
             border: 1px solid var(--wireframe-dark);
-            background: var(--wireframe-light);
             font-weight: bold;
         }
 
@@ -323,16 +315,6 @@
             overflow-y: auto;
             padding: 8px;
             background-color: var(--wireframe-light);
-        }
-
-
-        .view-section {
-            display: none;
-        }
-
-
-        .view-section.active {
-            display: block;
         }
 
 
@@ -347,12 +329,10 @@
         .card {
             background-color: var(--wireframe-light);
             padding: 6px 4px;
-            border-radius: 0;
-            font-size: 8px;
+            font-size: 9px;
             font-weight: 600;
             text-align: center;
             color: var(--wireframe-dark);
-            box-shadow: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -365,13 +345,12 @@
 
         .card.active-selected {
             border: 2px solid var(--wireframe-dark);
-            background-color: var(--wireframe-light);
             outline: 1px dashed var(--wireframe-dark);
         }
 
 
         .status-pill {
-            font-size: 6.5px;
+            font-size: 7.5px;
             margin-top: 2px;
             font-weight: bold;
             border: 1px dotted var(--wireframe-dark);
@@ -382,14 +361,13 @@
         .zone-status-container {
             background-color: var(--wireframe-light);
             padding: 6px 8px;
-            border-radius: 0;
             border: 1px solid var(--wireframe-dark);
             margin-bottom: 6px;
         }
 
 
         .zone-status-container h3 {
-            font-size: 9px;
+            font-size: 10px;
             color: var(--wireframe-dark);
             margin-bottom: 3px;
             border-bottom: 1px solid var(--wireframe-dark);
@@ -405,7 +383,7 @@
         .zone-list li {
             display: flex;
             justify-content: space-between;
-            font-size: 9px;
+            font-size: 10px;
             padding: 3px 0;
             border-bottom: 1px dotted var(--wireframe-dark);
             align-items: center;
@@ -413,8 +391,8 @@
 
 
         .dot {
-            height: 5px;
-            width: 5px;
+            height: 6px;
+            width: 6px;
             border: 1px solid var(--wireframe-dark);
             display: inline-block;
             margin-left: 4px;
@@ -426,8 +404,7 @@
         .confirmation-box {
             background-color: var(--wireframe-light);
             padding: 6px 8px;
-            border-radius: 0;
-            font-size: 9px;
+            font-size: 10px;
             color: var(--wireframe-dark);
             font-weight: bold;
             margin-top: 5px;
@@ -437,14 +414,13 @@
 
         .confirmation-box input[type="date"], .confirmation-box select {
             width: 100%;
-            padding: 3px;
+            padding: 4px;
             margin-top: 2px;
             margin-bottom: 4px;
-            border-radius: 0;
             border: 1px solid var(--wireframe-dark);
             background: var(--wireframe-light);
             color: var(--wireframe-dark);
-            font-size: 9px;
+            font-size: 10px;
         }
 
 
@@ -452,10 +428,9 @@
             background-color: var(--wireframe-dark);
             color: var(--wireframe-light);
             border: 1px solid var(--wireframe-dark);
-            padding: 5px 6px;
-            border-radius: 0;
-            font-size: 8.5px;
+            padding: 6px;
             font-weight: bold;
+            font-size: 10px;
             cursor: pointer;
             width: 100%;
         }
@@ -463,72 +438,11 @@
 
         .reservation-item {
             background: var(--wireframe-light);
-            padding: 6px;
-            border-radius: 0;
+            padding: 8px;
             border: 1px dashed var(--wireframe-dark);
             margin-top: 5px;
             text-align: left;
-            font-size: 8.5px;
-        }
-
-
-        .profile-card {
-            background: var(--wireframe-light);
-            padding: 10px;
-            border-radius: 0;
-            border: 1px solid var(--wireframe-dark);
-            text-align: center;
-        }
-
-
-        .profile-avatar {
-            width: 40px;
-            height: 40px;
-            background-color: var(--wireframe-light);
-            color: var(--wireframe-dark);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            margin: 0 auto 4px auto;
-            border: 2px solid var(--wireframe-dark);
-            overflow: hidden;
-        }
-
-
-        .profile-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%);
-        }
-
-
-        .change-photo-btn {
-            font-size: 7.5px;
-            color: var(--wireframe-dark);
-            background: none;
-            border: none;
-            cursor: pointer;
-            margin-top: 2px;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-
-        .profile-info {
-            text-align: left;
-            margin-top: 6px;
-            font-size: 9px;
-            border-top: 1px solid var(--wireframe-dark);
-            padding-top: 5px;
-        }
-
-
-        .profile-info p {
-            margin-bottom: 3px;
-            color: var(--wireframe-dark);
+            font-size: 10px;
         }
 
 
@@ -536,7 +450,7 @@
             display: flex;
             justify-content: space-around;
             background-color: var(--wireframe-light);
-            padding: 5px 0;
+            padding: 6px 0;
             flex-shrink: 0;
             border-top: 2px solid var(--wireframe-dark);
         }
@@ -549,20 +463,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 7.5px;
+            font-size: 8.5px;
             cursor: pointer;
             flex: 1;
         }
 
 
-        .nav-item .nav-icon {
-            font-size: 12px;
-            margin-bottom: 1px;
-        }
-
-
         .nav-item.active {
-            color: var(--wireframe-dark);
             font-weight: bold;
             text-decoration: underline;
         }
@@ -573,16 +480,16 @@
 
     <div class="prototype-header">
         <h1>UB Campus Parking & Bike Rack Tracker — Wireframe Prototype</h1>
-        <p>[Monochrome Black & White Wireframe Layout]</p>
+        <p>[Monochrome Wireframe Layout with Success Reservation State]</p>
     </div>
 
 
     <div class="side-by-side-wrapper">
 
 
-        <!-- FRAME 1: LOGIN & SIGN UP VIEW -->
+        <!-- FRAME 1: AUTHENTICATION SCREEN -->
         <div class="frame-column">
-            <span class="frame-label">Frame 1: Authentication Screen</span>
+            <span class="frame-label">Frame 1: Auth Screen</span>
             <div class="app-container">
                 <div id="screen-login" class="screen active">
                     <div class="login-wrapper-direct">
@@ -624,65 +531,152 @@
         </div>
 
 
-        <!-- FRAME 2: MAIN DASHBOARD VIEW -->
+        <!-- FRAME 2: MAIN DASHBOARD -->
         <div class="frame-column">
-            <span class="frame-label">Frame 2: Main Dashboard & Reservations</span>
+            <span class="frame-label">Frame 2: Main Dashboard</span>
             <div class="app-container">
-                
                 <header class="app-header">
-                    <h1 id="header-title">UB CAMPUS PARKING TRACKER</h1>
-                    <div class="overview-banner" id="overview-badge">
+                    <h1>UB CAMPUS PARKING TRACKER</h1>
+                    <div class="overview-banner">
                         <span class="badge-icon">✔</span> OVERVIEW: 78 Free Slots
                     </div>
                 </header>
 
 
-                <div id="filter-container" class="filter-bar">
-                    <button class="filter-btn" id="btn-moto" onclick="filterCategory('motorcycle')">
-                        <span class="icon">🏍️</span>
-                        <span>MOTORCYCLE</span>
-                    </button>
-                    <button class="filter-btn active" id="btn-car" onclick="filterCategory('car')">
-                        <span class="icon">🚗</span>
-                        <span>CAR</span>
-                    </button>
-                    <button class="filter-btn" id="btn-bike" onclick="filterCategory('bicycle')">
-                        <span class="icon">🚲</span>
-                        <span>BICYCLE</span>
-                    </button>
+                <div class="filter-bar">
+                    <button class="filter-btn">🏍️ MOTORCYCLE</button>
+                    <button class="filter-btn active">🚗 CAR</button>
+                    <button class="filter-btn">🚲 BICYCLE</button>
                 </div>
 
 
                 <div class="dashboard-content">
-                    
-                    <!-- HOME VIEW -->
-                    <section id="view-home" class="view-section active">
-                        <div class="grid-layout" id="nine-box-grid">
-                            <div class="card" onclick="selectBox(this, 'UB Science Lab')">UB Science Lab</div>
-                            <div class="card" onclick="selectBox(this, 'UB Library')">UB Library</div>
-                            <div class="card" onclick="selectBox(this, 'North Lot')">
-                                North Lot:<br><strong>21/40 Free</strong>
-                                <span class="status-pill available">Available</span>
-                            </div>
-                            <div class="card" onclick="selectBox(this, 'Gate 1 Lot')">
-                                Gate 1 Lot:<br><strong>12/50 Free</strong>
-                                <span class="status-pill full">Full</span>
-                            </div>
-                            <div class="card active-selected" onclick="selectBox(this, 'Main Bldg. Lot')">
-                                Main Bldg. Lot:<br><strong>45/60 Free</strong>
-                                <span class="status-pill available">Available</span>
-                            </div>
-                            <div class="card" onclick="selectBox(this, 'Bike Rack B1')">
-                                Bike Rack B1:<br><strong>0/15 Free</strong>
-                                <span class="status-pill full">Full</span>
-                            </div>
-                            <div class="card" onclick="selectBox(this, 'UB Gym')">UB Gym</div>
-                            <div class="card" style="opacity: 0.8;" onclick="selectBox(this, 'Bike Rack B2')">
-                                Bike Rack B2:<br><strong>5/15 Free</strong>
-                                <span class="status-pill available">Available</span>
-                            </div>
-                            <div class="card" onclick="selectBox(this, 'UB Main Campus')">UB Main</div>
+                    <div class="grid-layout">
+                        <div class="card">UB Science Lab</div>
+                        <div class="card">UB Library</div>
+                        <div class="card">North Lot:<br><strong>21/40 Free</strong><span class="status-pill">Available</span></div>
+                        <div class="card">Gate 1 Lot:<br><strong>12/50 Free</strong><span class="status-pill">Full</span></div>
+                        <div class="card active-selected">Main Bldg. Lot:<br><strong>45/60 Free</strong><span class="status-pill">Available</span></div>
+                        <div class="card">Bike Rack B1:<br><strong>0/15 Free</strong><span class="status-pill">Full</span></div>
+                        <div class="card">UB Gym</div>
+                        <div class="card">Bike Rack B2:<br><strong>5/15 Free</strong><span class="status-pill">Available</span></div>
+                        <div class="card">UB Main</div>
+                    </div>
+
+
+                    <div class="zone-status-container">
+                        <h3>ZONE STATUS (CARS)</h3>
+                        <ul class="zone-list">
+                            <li><span>Main Bldg. Lot:</span> <strong>45 Spots <span class="dot green"></span></strong></li>
+                            <li><span>North Lot:</span> <strong>21 Spots <span class="dot green"></span></strong></li>
+                            <li><span>South Lot:</span> <strong>0 Spots <span class="dot red"></span></strong></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="confirmation-box">
+                        [ Selected: Main Bldg. Lot ]
+                        <div style="margin-top: 3px;">
+                            <label style="font-size: 9px;">Reservation Date:</label>
+                            <input type="date" value="2026-11-12">
                         </div>
+                        <button class="reserve-action-btn">[ Confirm & Reserve Slot ]</button>
+                    </div>
+                </div>
 
 
-                        <div class="zone-status-container">
+                <nav class="bottom-nav">
+                    <button class="nav-item active">🏠 HOME</button>
+                    <button class="nav-item">🗺️ MAP</button>
+                    <button class="nav-item">📋 RESERVATIONS</button>
+                    <button class="nav-item">👤 PROFILE</button>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- FRAME 3: SUCCESSFUL RESERVATION STATE -->
+        <div class="frame-column">
+            <span class="frame-label">Frame 3: Reservation Successful</span>
+            <div class="app-container">
+                <header class="app-header">
+                    <h1>UB CAMPUS PARKING TRACKER</h1>
+                    <div class="overview-banner">
+                        <span class="badge-icon">✔</span> RESERVATION TRACKER
+                    </div>
+                </header>
+
+
+                <div class="dashboard-content">
+                    <div style="text-align: center; margin-bottom: 10px; font-weight: bold;">
+                        📋 Active Slot Reservations
+                    </div>
+                    
+                    <div class="reservation-item">
+                        [🚗] <strong>Main Bldg. Lot</strong><br>
+                        Date: 2026-11-12 (Advance Reserve)<br>
+                        Time: Morning (8:00 AM - 12:00 PM)<br>
+                        <strong>Status: ✔ Confirmed & Tracked</strong>
+                    </div>
+
+
+                    <div style="margin-top: 15px; border: 1px solid var(--wireframe-dark); padding: 10px; text-align: center; font-size: 9.5px;">
+                        <strong>Reservation QR Pass Generated</strong><br>
+                        <span style="font-size: 24px;">⬛⬜⬛⬛⬜</span><br>
+                        Scan at UB Gate Security
+                    </div>
+                </div>
+
+
+                <nav class="bottom-nav">
+                    <button class="nav-item">🏠 HOME</button>
+                    <button class="nav-item">🗺️ MAP</button>
+                    <button class="nav-item active">📋 RESERVATIONS</button>
+                    <button class="nav-item">👤 PROFILE</button>
+                </nav>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        function setAuthMode(mode) {
+            const title = document.getElementById('auth-title');
+            const subtitle = document.getElementById('auth-subtitle');
+            const actionBtn = document.getElementById('auth-action-btn');
+            const loginBtn = document.getElementById('btn-mode-login');
+            const signupBtn = document.getElementById('btn-mode-signup');
+
+
+            if (mode === 'signup') {
+                loginBtn.classList.remove('active');
+                signupBtn.classList.add('active');
+                title.innerText = "CREATE NEW ACCOUNT";
+                subtitle.innerText = "Register your University ID";
+                actionBtn.innerText = "SIGN UP";
+            } else {
+                signupBtn.classList.remove('active');
+                loginBtn.classList.add('active');
+                title.innerText = "UB CAMPUS PARKER";
+                subtitle.innerText = "Sign in with your University ID";
+                actionBtn.innerText = "LOG IN";
+            }
+        }
+
+
+        function togglePasswordVisibility() {
+            const passInput = document.getElementById('input-pass');
+            const toggleBtn = document.querySelector('.toggle-pass-btn');
+            if (passInput.type === "password") {
+                passInput.type = "text";
+                toggleBtn.innerText = "🙈"; 
+            } else {
+                passInput.type = "password";
+                toggleBtn.innerText = "👁️"; 
+            }
+        }
+    </script>
+</body>
+</html>
